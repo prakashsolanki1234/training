@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .fheader{
+            background: #f3971b;
+            margin-bottom: 30px;
+            width: 100%;
+        }
+        .mnav{
+            text-align: center;
+            /* display: inline; */
+        }
+        .men{
+            padding: 7px;
+            text-decoration: none;
+            border: 3px solid #34327c;
+                border-radius: 10px;
+                margin-right: 5px;
+                background-color: #ee8fc2;
+        }
+        .ot{
+            padding:30px;
+            display: block;
+            border-radius: 50%;
+            
+            text-align: center;
+            color: rgb(227, 227, 233);
+            background-color: #d12881
+            
+        }
+        .mimg{
+            border-radius: 50%;
+            margin-top: 50px;
+            margin-right: 50px;
+            margin-bottom: 50px;
+        }
+        .activity{
+            padding: 10px;
+            width: 250px;
+            color: #C0C0C0;
+            display: block;
+            border-radius: 20px;
+            line-height: 50px;
+            background-color: #34327c;
+            
+        }
+        .cn
+        {
+            text-align: center;
+        }
+        .empd{
+            text-align: center;
+        }
+        
+      p{
+          text-align: justify;
+      }
+      .ut{
+          text-align: center;
+      }
+      .fhe{
+          margin-bottom: 30px;
+      }
+     body{
+         background-color: #C0C0C0;
+     }   
+     hr{
+       
+        background-color:#34327c;
+        margin-bottom: 30px;
+     }
+     .vl {
+  border-left: 1px solid green;
+  height: 100px;
+}
+     h6{
+         margin: 10px;
+        
+             }
+             .fom{
+                 width: 450px;
+                 margin: 20px;
+             }
+             form{
+                 border: 5px solid rebeccapurple;
+                 padding: 20px;
+             }
+             button{
+                 background-color: blue;
+             }
+             header{
+                 height: 80px;
+             }
+             footer{
+                 background-color: #34327c;
+                 margin-top: 30px;
+             }
+             .fbutton{
+                background-color: #d12881;
+                border-radius: 20%;
+             }
+             .ftext{
+                 color: #C0C0C0;
+             }
+             .htitle{
+                 padding: 25px;
+                 border: 1px solid rebeccapurple;
+                 width: 300px;
+                 border-radius: 50%;
+                 background-color: rgb(24, 138, 184);
+             }
+
+
+
+             .mySlides {display:none;}
+
+             /* a:link {
+             text-decoration: none;
+                border: 3px solid #34327c;
+                border-radius: 10px;
+                margin-right: 5px;
+                background-color: #ee8fc2;
+} */
+.flogo{
+    text-decoration: none;
+
+}
+.headerlogo{
+    margin-left: 400px;
+
+}
+             
+    </style>
+</head>
+<body>
+    
+    <header class="fheader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                    <!-- <img src="img23.png" alt="" style="width: 100px; height: 80px;"> -->
+                    <h1 class="htitle">Little Cubs</h1>
+                    </div>    
+                    <div class="col-md-4">
+   
+                    <nav class="mnav" style="display: flex; margin-top: 18px;">
+                    
+                        <a href="#ot"class="men"> OurTeam</a>
+                        <a href="#aboutus" class="men"> Aboutus</a>
+                        <a href="#ourtimetable" class="men"> OurTimetable</a>
+                        <a href="#ourservice" class="men">OurService</a>
+                        <a href="#contactus" class="men"> Contactus</a>
+                
+                    </nav>
+                    
+                </div>
+                <div class="col-md-4">
+                    <img src="img23.png" alt="" style="width: 100px; height: 80px;" class="headerlogo" align="right">  
+             </div>
+            </div>
+        </div>
+       
+    </header>
+    
+    
+    <main>
+
+
+        
+        <div class="w3-content w3-display-container">
+            <img class="mySlides" src="img19.jpg" style="width:100%">
+            <img class="mySlides" src="img20.jpg" style="width:100%">
+            <img class="mySlides" src="img21.jpg" style="width:100%">
+            <!-- <img class="mySlides" src="img3.jpg" style="width:100%"> -->
+          
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+          </div>
+          
+          <script>
+          var slideIndex = 1;
+          showDivs(slideIndex);
+          
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
+          }
+          
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+          }
+          </script>
+          
+        <div class="container" style="margin-top: 20px;">
+            <div>
+                <div id="ot">
+                   <u> <h2 class="ot">Our Team</h2></u>
+                   <div class="ut">
+                    <img src="img2.jpg" width="300px" height="300px">
+                </div>
+                 <u>   <h1 class="empd">Meet our Qualified Staff</h1></u>
+                    <p> Ibu lum orci eget, viverra elit. Aliquam erat volut pat phas ellus ac sodales felis tiam non Doloreiur qui commolu ptatemp dolupta orem retibusam andigen Ibu lum orci eget, viverra elit aliquam erat volut pat phas ellus ac sodales felis tiam non metus. Placerat a ultricies a, posuere a nibh fusce mollis imperdie tlorem ipuset campas fincas interdum donec eget metus auguen unc vel mauris ultricies, vest ibulum orci eget usce mollis imperdiet interdum donec eget metus auguen unc vel lorem ispuet Ibu lum orci eget, viverra elit liquam erat volut pat phas ellus ac sodales Lorem ipsum dolor sit amet.
+                        <div class="empd">
+                        <img src="img3.jpg"  class="mimg" width="200px" height="200px">
+                        <h2>Jena Doe</h2>
+                        <img src="img4.jpg"  class="mimg" width="200px" height="200px">
+                        <h2>Mario shall</h2>
+                    </div>
+                    </p>
+                 </div>
+                
+                 <hr size="7px">
+                <div id="aboutus">
+                     <u> <h2 class="ot">About us</h2></u>
+                     <div class="ut">
+                    <img src="img5.jpg" alt="" width="300px" height="200px">
+                    <h1>Our Philosophy</h1>
+                </div>
+                    <p>
+                        Alphabet Daycare will provide a stimulating and safe environment for children ages three months to ten years. Run by a former elementary school educator (Jane Doe), Alphabet Daycare will be the fun, affordable alternative daycare with the best quality you can find in town. We seek to stimulate and develop children’s problem-solving and reactive thinking skills through staff and child directed activities in our daily agenda. Lectus placerat a ultricies a,interdum donec eget metus auguen u Fusce mollis
+                    </p>
+                        <p>
+                        
+                        INFANTS
+                        Lectus placerat a ultricies a,interdum donec eget metus auguen u Fusce mollis imperdiet interdum donec eget metus auguen unc vel lorem.
+                        
+                        TODDLERS
+                        Lectus placerat a ultricies a,interdum donec eget metus auguen u Fusce mollis imperdiet interdum donec eget metus auguen unc vel lorem.
+                    </p>
+                        <p>
+                        PRE SCHOOL
+                        Lectus placerat a ultricies a, interdum donec eget metus auguen
+                        
+                        Visit Our Daycare
+                        Lotam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi Suspendisse a elementum anteu imperdiet et maecenas eu 
+                        
+                    </p>
+                   <u> <h1>What Parents Think ?</h1></u>
+                    <div class="container">
+                        <div class="row py-5">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="img10.jpg" class="card-img-top">
+                                    <div class="card-body">
+                                        <p class="card-text">Alphabet Daycare will provide a stimulating and safe environment for children ages three months to ten years. Run by a former elementary school educator (Jane Doe), Alphabet Daycare will be the fun, affordable alternative daycare with the best quality you can find in town. We seek to stimulate and develop children’s problem-solving and reactive thinking skills through staff and child directed activities in our daily agenda. Lectus placerat a ultricies a,interdum donec eget metus auguen u Fusce mollis</p>
+                                        <a href="" class="men"> Read more...</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="img11.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <p class="card-text">Alphabet Daycare will provide a stimulating and safe environment for children ages three months to ten years. Run by a former elementary school educator (Jane Doe), Alphabet Daycare will be the fun, affordable alternative daycare with the best quality you can find in town. We seek to stimulate and develop children’s problem-solving and reactive thinking skills through staff and child directed activities in our daily agenda. Lectus placerat a ultricies a,interdum donec eget metus auguen u Fusce mollis</p>
+                                        <a href="" class="men">Read more...</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="img12.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <p class="card-text">Alphabet Daycare will provide a stimulating and safe environment for children ages three months to ten years. Run by a former elementary school educator (Jane Doe), Alphabet Daycare will be the fun, affordable alternative daycare with the best quality you can find in town. We seek to stimulate and develop children’s problem-solving and reactive thinking skills through staff and child directed activities in our daily agenda. Lectus placerat a ultricies a,interdum donec eget metus auguen u Fusce mollis</p>
+                                        <a href="" class="men"> Read more...</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr size="7px">
+                   
+                </div>
+                <div id="ourtimetable" >
+                    <u> <h2 class="ot">OurTimetable</h2></u>
+                    <div  class="cn">
+                        <div>
+                            <h1 class="activity">Music</h1>
+                            <img src="img13.jpg" class="mimg" width="500px" height="500px">
+                            <b><h2>Music Classes</h2></b>
+                            <p>Patatemp dolupta orem retibusam qui commolu les felis tiam non metus ali quam eros Pellentesque turpis lectus, placerat a ultricies a, posuere a nibh. Fusce mollis imperdiet interdum donec eget metus auguen unc vel mauris ultricies.</p>
+                        </div>
+                        <hr size="7px">
+                        <div>
+                            <h1 class="activity">Spanish</h1>
+                            <img src="img14.jpg" class="mimg" width="500px" height="500px">
+                            <b><h2>Spanish Classes</h2></b>
+                            <p>Patatemp dolupta orem retibusam qui commolu les felis tiam non metus ali quam eros Pellentesque turpis lectus, placerat a ultricies a, posuere a nibh. Fusce mollis imperdiet interdum donec eget metus auguen unc vel mauris ultricies.</p>
+                        </div>
+                        <hr size="7px">
+                        <div>
+                            <h1 class="activity">Lunch</h1>
+                            <img src="img15.jpg" class="mimg" width="500px" height="500px">
+                            <b><h2>Lunch</h2></b>
+                            <p>Patatemp dolupta orem retibusam qui commolu les felis tiam non metus ali quam eros Pellentesque turpis lectus, placerat a ultricies a, posuere a nibh. Fusce mollis imperdiet interdum donec eget metus auguen unc vel mauris ultricies.</p>
+                        </div>
+                        <hr size="7px">
+                        <div>
+                            <h1 class="activity">
+                                Swimming</h1>
+                            <img src="img16.jpg" class="mimg" width="500px" height="500px">
+                            <b><h2>             Swimming</h2></b>
+                            <p>Patatemp dolupta orem retibusam qui commolu les felis tiam non metus ali quam eros Pellentesque turpis lectus, placerat a ultricies a, posuere a nibh. Fusce mollis imperdiet interdum donec eget metus auguen unc vel mauris ultricies.</p>
+                        </div>
+                        <hr size="7px">
+                        <div>
+                            <h1 class="activity">
+                                Playground</h1>
+                            <img src="img17.jpg" class="mimg" width="500px" height="500px">
+                            <b><h2>            Playground</h2></b>
+                            <p>Patatemp dolupta orem retibusam qui commolu les felis tiam non metus ali quam eros Pellentesque turpis lectus, placerat a ultricies a, posuere a nibh. Fusce mollis imperdiet interdum donec eget metus auguen unc vel mauris ultricies.</p>
+                        </div>
+                        <hr size="7px">
+
+                        
+                    </div>
+
+                </div>
+                
+                <div id="ourservice">
+                
+                    <u> <h2 class="ot">OurService</h2></u>
+                <div class="ut">
+                    <h1> The Best Daycare</h1>
+                    <img src="img6.png" alt="" class="mimg" width="300px" height="300px"></div>
+                    <p>
+                        Alphabet Daycare will provide a stimulating and safe environment for children ages three months to ten years. Run by a former elementary school educator (Jane Doe), Alphabet Daycare will be the fun, affordable alternative daycare with the best quality you can find in town. We seek to stimulate and develop children’s problem-solving and reactive thinking skills through staff and child directed activities in our daily agenda. Lectus placerat a ultricies a,interdum donec eget metus auguen u Fusce mollis imperdiet interdum donec eget metus auguen Lectus placerat a ultricies a,interdum donec eget metus auguen u Fusce mollis imperdiet interdum donec eget metus auguen unc vel lorem.s
+                    </p>
+                    <img src="img7.jpg" alt="" class="mimg" width="300px" height="300px">
+                    <img src="img8.jpg" alt="" class="mimg" width="300px" height="300px">
+                    <img src="img9.jpg" alt="" class="mimg" width="300px" height="300px">
+                </div>
+                <hr size="7px">
+                <div id="contactus">
+                    <u> <h2 class="ot">Contact us</h2></u>
+                 <u> <h2 class="fhe">INFORMATION</h2></u> 
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6> <i class="fa fa-envelope" aria-hidden="true"  style="font-size: 20px; margin-right: 5px;"></i>Email: <a href="mailto:solankiprakash5457@gmail.com"> solankiprakash5457@gmail.com </a></h6>
+                            <h6><i class="fa fa-phone-square" aria-hidden="true" style="font-size: 20px; margin-right: 5px;"></i>Phone No: <a href="tel:8595987525"> 85959 87525 </a></h6>
+                            <img src="img18.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -40px; margin-top: -94px; width: 80px; height: 95px; transform: translate3d(0px, 0px, 0px); z-index: 150;">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.5842094314758!2d70.74370141420789!3d22.29373488532702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959ca2e135aaab7%3A0xd0b435306457ad00!2sRao%20Information%20Technology%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1651144557600!5m2!1sen!2sin" width="500" height="450" style="border: 1px solid;  " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            
+                        </div>
+                        <div class="col-md-6" style="margin-top: 70px;">
+                            <form action="" >
+                               <u> <h2>WRITE US</h2></u>
+                                <input type="text" value="Name" class="fom"><br>
+                                <input type="email" value="Email Id" class="fom"><br>
+                                <input type="text" value="Subject" class="fom"><br>
+                                <input type="textarea" value="Enter Yuur message" class="fom" height="10px">
+                                <button type="submit" value="Send message" style="color: #C0C0C0;"> Send message</button>
+                               
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+   
+    <footer>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    
+                   <u><h4 class="ftext">SIGN OUR NEWSLETTER</h4></u> 
+                    <h6 class="ftext">We will send updates once a week.</h6>
+                    <input type="text" name="" id="" value="Your email here..." width="50PX">
+                    <button type="submit" class="fbutton"> SUBSCIBES</button>
+                         
+                </div>
+                
+
+                <div class="col-md-2" style="align-items: center; margin: 50px; display: flex;">
+                   <a href="https://www.facebook.com/campaign/landing.php?campaign_id=14884913640&extra_1=s%7Cc%7C550525804791%7Ce%7Cfacebook%7C&placement=&creative=550525804791&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D14884913640%26adgroupid%3D128696220912%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-1001394929%26loc_physical_ms%3D1007759%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAjw9qiTBhBbEiwAp-GE0VNox04BLCMtICEKgvUMN2ZlPIOO6xgvcqjMYt4mcOL5HaWlmxujFhoC0OYQAvD_BwE"><i class="fa fa-facebook-square" aria-hidden="true" style="font-size: 25px; margin-right: 15px; border-radius: 100%; color: #ebe8f3;"></i></a>
+   <a href=""><i class="fa fa-phone-square" aria-hidden="true" style="font-size: 25px; margin-right: 15px; border-radius: 100%; color: #ebe8f3;"></i></a> 
+    <a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"  style="font-size: 25px; margin-right: 15px; border-radius: 50%;  color: #ebe8f3;"></i></a>
+   <a href="https://mail.google.com/mail/u/0/#inbox"> <i class="fa fa-envelope" aria-hidden="true"  style="font-size: 25px; margin-right: 15px; border-radius: 50%;  color: #ebe8f3;"></i></a>
+   <a href="https://twitter.com/i/flow/login"><i class="fa fa-twitter-square" aria-hidden="true"  style="font-size: 25px; margin-right: 15px; border-radius: 50%;  color: #ebe8f3;"></i></a> 
+    
+                </div>
+                
+
+                <div class="col-md-4">
+                    <u><h4 class="ftext">OPENING HOURS:</h4></u>
+                    <h5 class="ftext">Monday to Friday &nbsp; &nbsp;&nbsp;  7 a.m. to 7 p.m.</h5>
+                    <hr style="border: 2px dotted white; ">
+                    <h4 class="ftext">Weekends / Holidays</h4>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+</html>
